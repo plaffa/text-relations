@@ -37,25 +37,21 @@ class FileRegistry:
         self.registry.append(TextFile(self.num_files, file_name, words))
         self.num_files += 1
 
-    def return_vectors(self, normalise=True):
+    def create_matrix(self, normalise=True):
         """
         Converts each element in the file registry to a vector format and returns them
         """
-
-        mat = np.zeros((self.num_files, len(self.unique_words))
+        mat = np.zeros((self.num_files, len(self.unique_words)))
         for i, tf in enumerate(self.registry):
             for word in list(tf.word_stat):
-                val = tf.word_stat[word] / tf.num_words if normalise else tf.word_stat
-                mat[i, self.unique_words.index[word]] = val
-
-        if normalise:
-            pass
-        pass
+                val = float(tf.word_stat[word]) / float(tf.num_words) if normalise else float(tf.word_stat)
+                mat[i, self.unique_words.index(word)] = val
+        return mat
 
 
 class TextFile:
-    def __init__(self, file_name, word_stat):
-        self.id = None
+    def __init__(self, id, file_name, word_stat):
+        self.id = id
         self.file_name = file_name
         self.word_stat = word_stat
         self.num_words = len(word_stat)
@@ -67,4 +63,6 @@ class TextFile:
 if __name__ == "__main__":
     fr = FileRegistry()
     fr.register_files('text_files')
-    print(len(fr.unique_words))
+    mat = fr.create_matrix()
+    print(mat.shape)
+    print(mat)
