@@ -4,7 +4,7 @@
 - Python >= 3.6
 - matplotlib
 - NumPy
-- Scikit-Learn
+- scikit-learn
 
 **What and how**
 
