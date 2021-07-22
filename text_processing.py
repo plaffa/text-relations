@@ -5,10 +5,11 @@ import numpy as np
 
 
 class FileRegistry:
-    def __init__(self):
+    def __init__(self, file_encoding='utf8'):
         self.registry = []
         self.num_files = 0
         self.unique_words = []
+        self.file_encoding = file_encoding
 
     def register_files(self, directory):
         for file_name in os.listdir(directory):
@@ -16,7 +17,7 @@ class FileRegistry:
 
     def register_file(self, file_name, directory=''):
         words = {}
-        with open(os.path.join(directory, file_name), 'r') as f:
+        with open(os.path.join(directory, file_name), 'r', encoding=self.file_encoding) as f:
             for line in f:
                 for word in line.split():
                     # Some simple pre-processing
