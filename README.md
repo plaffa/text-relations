@@ -1,6 +1,6 @@
 # text-relations
 
-Dependencies:
+**Dependencies**
 - Python >= 3.6
 - NumPy
 - Scikit-Learn
@@ -15,3 +15,5 @@ experiment a little with the perplexity variable, since it will depend on the te
 Perhaps in the range [2.0, 10.0].
 
 The example text files contain the two first paragraphs from Wikipedia articles about different countries.
+
+![tsne](https://user-images.githubusercontent.com/42536147/126667075-6041a95d-ae82-47ff-85cf-be9e41b49b76.png)
