@@ -36,7 +36,7 @@ class FileRegistry:
         self.registry.append(TextFile(self.num_files, file_name, words))
         self.num_files += 1
 
-    def create_matrix(self, normalise=True):
+    def create_data_matrix(self, normalise=True):
         """
         Converts each element in the file registry to a vector format and returns them
         """
