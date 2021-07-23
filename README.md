@@ -16,9 +16,9 @@ Run _main.py_ to give it a go
 
 ![tsne](https://user-images.githubusercontent.com/42536147/126667075-6041a95d-ae82-47ff-85cf-be9e41b49b76.png)
 
-### **TODO**
-- [] Test the program with other texts. Preferably a mix of categories?
-- [] Add the possibility to ignore certain words. E.g. prepositions
-- [] Introduce a deep learning language model for feature extraction. BERT?
-- [] Find an appropriate clustering method. Not sure DBSCAN is the way to go due to highly sensitive parameter settings. 
-- [] If clustering: It would be nice to see e.g. the "top 3" words within each cluster.
+**TODO**
+- [ ] Test the program with other texts. Preferably a mix of categories?
+- [ ] Add the possibility to ignore certain words. E.g. prepositions
+- [ ] Introduce a deep learning language model for feature extraction. BERT?
+- [ ] Find an appropriate clustering method. Not sure DBSCAN is the way to go due to highly sensitive parameter settings. 
+- [ ] If clustering: It would be nice to see e.g. the "top 3" words within each cluster.
