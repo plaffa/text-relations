@@ -1,3 +1,8 @@
+"""
+Author: Patrick R. Gorton
+Date:   July 2021
+"""
+
 
 from matplotlib import pyplot as plt
 from sklearn.decomposition import PCA
