@@ -1,3 +1,8 @@
+"""
+Author: Patrick R. Gorton
+Date:   July 2021
+"""
+
 
 import re
 import os
