@@ -1,3 +1,7 @@
+"""
+Author: Patrick R. Gorton
+Date:   July 2021
+"""
 
 
 import argparse
