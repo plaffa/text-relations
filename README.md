@@ -18,6 +18,7 @@ Run _main.py_ to give it a go
 
 **TODO**
 - [ ] It seems as though I should use PaCMAP, which is the new visualisation method in town. https://arxiv.org/pdf/2012.04456.pdf
+- [ ] Create a subplot with data visualised by different methods?
 - [ ] Test the program with other texts. Preferably a mix of categories?
 - [ ] Add the possibility to ignore certain words. E.g. prepositions
 - [ ] Introduce a deep learning language model for feature extraction. BERT?
